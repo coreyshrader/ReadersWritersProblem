@@ -1,5 +1,6 @@
 /**
  * Created by Corey on 4/23/17.
+ * Christopher Groppe
  */
 public class Writer extends Thread implements Runnable{
 
