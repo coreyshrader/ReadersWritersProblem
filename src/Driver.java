@@ -14,7 +14,7 @@ public class Driver{
 
 
     public static void main(String[] args) throws java.lang.Exception{
-        for(int i = 0; i < 51; i++){
+        for(int i = 0; i < 50; i++){
             int r = ThreadLocalRandom.current().nextInt(1, 4);//gen ran # between 1 and 3
             if(r == 1 || r == 2){//randomly gen a reader or writer, higher chance of reader
                 new Thread(new Reader()).start();
@@ -24,7 +24,7 @@ public class Driver{
 
             if(i == 49){// for loop never makes it to 50, so when i = 49, start a time to run simulation
                 long start = System.currentTimeMillis();
-                long end = start + 30*1000;
+                long end = start + 120*1000;
                 while(System.currentTimeMillis() < end){}
                 System.exit(0); //end simulation
             }
