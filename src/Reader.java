@@ -1,6 +1,5 @@
 /**
- * Created by Corey on 4/23/17.
- * Christopher Groppe
+ * Created by Corey Shrader & Christopher Groppe on 4/23/17.
  */
 public class Reader extends Thread implements Runnable{
 
